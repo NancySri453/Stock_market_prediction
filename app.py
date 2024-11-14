@@ -31,7 +31,7 @@ def predict():
     
     # Use the last row of the data to make predictions
     last_data = stock_data[['SMA50', 'SMA200']].dropna().iloc[-1:]
-    
+    print(last_data)
     # Make a prediction
     prediction = model.predict(last_data)
     
